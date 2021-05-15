@@ -5,12 +5,12 @@ import * as Yup from 'yup';
 export const Payment = ({ submit, setFormValues, prevValues }) => {
   return (
     <Formik
-      initialValues={{ prevValues }}
+      initialValues={prevValues}
       validationSchema={Yup.object({
-        CardName: Yup.string()
+        cardName: Yup.string()
           .max(15, 'Must be 15 characters or less')
           .required('Required'),
-        CardNumber: Yup.string()
+        cardNumber: Yup.string()
           .max(20, 'Must be 20 characters or less')
           .required('Required'),
       })}

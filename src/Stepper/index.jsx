@@ -49,7 +49,7 @@ function getStepContent(stepIndex, setStep, setFormValues, formValues) {
     default:
       return 'Unknown stepIndex';
   }
-} 
+}
 
 export default function HorizontalLabelPositionBelowStepper() {
   const classes = useStyles();
